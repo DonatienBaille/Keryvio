@@ -1,0 +1,22 @@
+[server]
+host = "127.0.0.1"
+port = 8080
+
+[api]
+responses_enabled = true
+chat_completions_enabled = true
+
+[streaming]
+sse_enabled = true
+websocket_enabled = true
+
+[websocket]
+max_connections_per_user = 5
+max_streams_per_connection = 32
+max_active_responses_per_connection = 16
+
+[inference]
+default_model = "qwen-local"
+
+[database]
+# Set DATABASE_URL in the runtime environment; never commit credentials here.

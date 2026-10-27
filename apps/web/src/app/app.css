@@ -1,0 +1,24 @@
+:host { display: block; min-height: 100vh; color: #202822; }
+.shell { display: grid; grid-template-columns: 260px 1fr; min-height: 100vh; background: #fbfaf7; }
+.sidebar { display: flex; flex-direction: column; padding: 24px 16px 18px; background: #f1f0e9; border-right: 1px solid #e8e6dc; }
+.brand { display: flex; align-items: center; gap: 10px; padding: 0 8px; font-weight: 700; letter-spacing: -.03em; }
+.brand-mark, .welcome-icon { display: grid; place-items: center; color: #fff; background: #315e49; font-weight: 700; }
+.brand-mark { width: 30px; height: 30px; border-radius: 10px; }
+.new-chat { display: flex; align-items: center; gap: 10px; margin-top: 34px; padding: 12px; border: 1px solid #d9d8ce; border-radius: 10px; color: #74776f; background: transparent; text-align: left; font: inherit; }
+.sidebar-note { margin: 22px 8px; color: #96978f; font-size: 13px; }
+.sidebar-bottom { margin-top: auto; padding: 12px 8px; color: #888b82; font-size: 12px; }
+.main-panel { display: flex; flex-direction: column; min-height: 100vh; }
+.topbar { display: flex; align-items: center; justify-content: flex-end; height: 64px; padding: 0 32px; color: #787b73; font-size: 12px; }
+.status { display: flex; align-items: center; gap: 8px; }
+.status i { width: 7px; height: 7px; border-radius: 50%; background: #9aaf70; }
+.mobile-brand { display: none; }
+.welcome { width: min(620px, calc(100% - 40px)); margin: auto; text-align: center; }
+.welcome-icon { width: 46px; height: 46px; margin: 0 auto 26px; border-radius: 15px; font-size: 20px; }
+.eyebrow { margin: 0 0 14px; color: #54755f; font-size: 12px; font-weight: 650; letter-spacing: .12em; text-transform: uppercase; }
+h1 { margin: 0; font-size: clamp(28px, 4vw, 40px); letter-spacing: -.045em; font-weight: 600; }
+.intro { max-width: 440px; margin: 16px auto 30px; color: #787b73; line-height: 1.6; }
+.prompt-box { display: flex; align-items: center; justify-content: space-between; padding: 12px 14px 12px 18px; border: 1px solid #e3e1d8; border-radius: 15px; background: #fff; box-shadow: 0 8px 30px #33452c0c; color: #a0a199; text-align: left; font-size: 14px; }
+.prompt-box button { width: 32px; height: 32px; border: 0; border-radius: 10px; color: #fff; background: #b9c0b3; font-size: 18px; }
+.setup-hint { margin-top: 14px; color: #9a9b93; font-size: 12px; }
+footer { padding: 20px; color: #9a9b93; text-align: center; font-size: 11px; }
+@media (max-width: 700px) { .shell { grid-template-columns: 1fr; } .sidebar { display: none; } .topbar { justify-content: space-between; padding: 0 20px; } .mobile-brand { display: inline; color: #202822; font-weight: 700; } }
